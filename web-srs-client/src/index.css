@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+
+.card-front {
+  
+  height:120pt;
+  width: 100%;
+  overflow: hidden;
+  padding: 5pt;
+  margin: 5pt;
+  color: white;
+}
+
+.new-card-front {
+
+  height:120pt;
+  width: 88%;
+  overflow: hidden;
+  padding: 5pt;
+  margin: 68% 7% 5% 7%;
+  left: 100pt;
+  color: white;
+
+}
+
+.card-front-inner{
+  background-color :  rgb(19, 152, 170);
+  height: 100%;
+  padding-left: 2pt;
+  padding-right: 2pt;
+  color: white;
+}
+
+.arrow-b{
+
+  cursor: pointer;
+  position:fixed;
+  top:50%;
+  float: center;
+  padding: 20pt;
+  background-color :  rgb(13, 201, 220);
+  color: white;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.arrow-a{
+
+  cursor: pointer;
+  position:fixed;
+  top:50%;
+  float: center;
+  padding: 20pt;
+  border-radius: 30px 0px 0px 30px;
+  background-color :  rgb(13, 201, 220);
+  color: white;
+}
+.module-sticker{
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  top:60pt;
+  right: 0pt;
+  float: center;
+  padding: 20pt;
+  border-radius: 5px 0px 0px 5px;
+  background-color :  rgb(81, 167, 177);
+  color: white;
+  
+}
+
+.module-selector-num{
+  position:fixed;
+  padding: 13pt;
+  margin-top: -16pt;
+  margin-left: 130pt;
+  background-color :  rgb(81, 167, 177);
+  /* padding: 20pt; */
+  border-radius: 0px 5px 5px 0px;
+  background-color :  rgb(81, 167, 177);
+  color: white;
+  
+}
+
+#mnumber{
+  max-width: 100pt;
+}
+.module-selector{
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  top:60pt;
+  float: center;
+  padding: 20pt;
+  border-radius: 0px 5px 5px 0px;
+  background-color :  rgb(81, 167, 177);
+  color: white;
+  
+}
+.module-selector-active{
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  top:60pt;
+  float: center;
+  padding: 20pt;
+  border-radius: 0px 5px 5px 0px;
+  background-color :  rgb(12, 125, 139);
+  color: white;
+  
+}
+.edit-mode:hover{
+  background-color: rgb(12, 125, 139);
+}
+.module-selector:hover{
+  background-color: rgb(12, 125, 139);
+}
+.edit-mode-active{
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  top:120pt;
+  float: center;
+  padding: 20pt 32pt 20pt 32pt;
+  
+  border-radius: 0px 5px 5px 0px;
+  background-color :  rgb(12, 125, 139);
+  color: white;
+  
+}
+.module-unclicked:hover{
+  background-color: rgb(12, 125, 139);
+}
+.card-input{
+  background-color: rgb(81, 167, 177);
+  color: red;
+  padding: 15pt;
+  margin: 100px auto 10px auto;
+ 
+}
+
+.root{
+  /* margin-right: 10pt; */
+  border-right: solid 6pt rgb(19, 152, 170);;
+}
+
+.edit-mode{
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  top:120pt;
+  float: center;
+  padding: 20pt 32pt 20pt 32pt;
+  
+  border-radius: 0px 5px 5px 0px;
+  background-color :  rgb(81, 167, 177);
+  color: white;
+  
+}
+
+form{
+  text-align: center;
+}
+
+.module-pop-up{
+
+  overflow-y: scroll; 
+  max-height: 100%;
+  z-index: 100;
+  cursor: pointer;
+  position:fixed;
+  margin: 45pt 20pt 20pt 20pt;
+  border-radius: 15px 5px 5px 5px ;
+  border-top-color: black;
+
+  
+}
+.arrow-a:hover{
+  background-color: rgb(12, 125, 139);
+}
+.arrow-b:hover{
+  background-color: rgb(12, 125, 139);
+}
+.card-button-b{
+
+  cursor: pointer;
+  position: relative;
+  bottom: 35pt;
+  float: bottom
+
+}
+.card-button-f{
+  cursor: pointer;
+  position: relative;
+  bottom: 35pt;
+  float: bottom
+
+}
+
+.card-back {
+  padding-top: 3pt;
+  background-color :  rgb(19, 152, 170);
+  height:100pt;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5pt;
+  margin: 5pt;
+  color: white;
+}
+.card-container{
+  height: 75%;
+  margin: auto
+}
+
+.card-dis{
+  background-color : rgb(172, 169, 169);
+  /* height: 40pt;
+  width: 100%; */
+  cursor: pointer;
+  /* overflow: hidden; */
+  padding: 7pt;
+  margin: 7pt;
+}
+
+
+.sm-grid-left{
+  /* margin: 20pt 5pt 0 5pt; */
+  padding: 10pt 10pt 0pt 20pt;
+}
+.sm-grid-md{
+  padding: 10pt 10pt 0pt 10pt;
+}
+.sm-grid-right{
+  padding: 10pt 20pt 0pt 10pt;
+}
+.module-clicked{
+  background-color: rgb(12, 75, 83);
+  color:  white;
+  padding: 5pt;
+  margin: 5pt;
+  cursor: pointer;
+  min-width: 220pt;
+  min-height: 30pt;
+  
+  vertical-align: middle;
+}
+.module-unclicked{
+
+  padding: 5pt;
+  margin: 5pt;
+  background-color: rgb(19, 152, 170);
+  color:  white;
+  cursor: pointer;
+  min-width: 220pt;
+  min-height: 30pt;
+  
+  vertical-align: middle;
+}
+
+.card-clicked{
+  background-color: rgb(12, 75, 83);
+  color:  white;
+  padding: 5pt;
+  margin: 5pt;
+  cursor: pointer;
+  min-width: 220pt;
+  
+
+}
+.card-unclicked{
+  padding: 5pt;
+  margin: 5pt;
+  color: white;
+  background-color : rgb(19, 152, 170);
+  cursor: pointer;
+}
+hr{
+  color: white;
+  padding-left: 2px
+}
