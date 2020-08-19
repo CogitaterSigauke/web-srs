@@ -1,0 +1,43 @@
+This is a work-in-progress to denote some of the initial features and thoughts of how this will work.
+
+
+Users
+- There can be multiple users in the system
+- Any user can add cards to their review list after interacting with a webpage that contains cards
+- Any user can further add / edit / or delete any card in their review list
+    - A user can also say never show this card again, but leave it in the list
+- Each user has 1 deck of cards to review (may later have multiple decks)
+
+How cards work
+- 1 or more cards are in a module
+    - When you visit a webpage with a module, you review these cards one at a time
+        - When a user encounters a new card for the first time, a “UserCard” is created that is linked to the “Card” being displayed
+        - Submitting any answer (“remembered” or “didn’t know”) bring the next card
+        - Anytime you submit an answer to a card, a new CardRating is added, linked to the UserCard 
+- A webpage can contain any number of modules
+- A webpage will be categorized by a topic “string”
+
+Need an admin page to created cards
+- Can see all of the available cards
+- Place multiple cards into a module
+
+Initially the system can just display the cards for the modules
+- E.g. make the module in advance in an admin page, and the cards on the webpage. One card at a time should only be shown for each module
+- Later, the system will be able to automatically create the cards via reading the webpage
+    - Will need create a format for the cards that the system can look for.
+    - e.g. <Card: the front of the card :: the back of the card >
+	- Will need to revise and think on the specifics of how this works
+
+Cards to review
+- A card can present a question and answer
+    - The question / answer combo may be some text that is then missing a word
+    - “The ___ data type can represent decimal numbers”
+        - “The float data type can represent decimal numbers”
+    - The user either got the card correct or wrong initially. 
+        - Later can adjust the rating to include different degrees of how well they know it
+        - Later also will add an option to never show a card again (but keep it saved in the User’s deck)
+
+
+Later:
+- Will need an accessible API that both a web frontend and mobile app can query to get the resulting JSON data
+
